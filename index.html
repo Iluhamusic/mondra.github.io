@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Илья | Portfolio</title>
+<title>Илья | Python Developer</title>
 
 <style>
 body {
@@ -10,30 +10,42 @@ body {
     font-family: Arial, sans-serif;
     background: url("background.jpg") no-repeat center/cover;
     color: white;
+}
+
+/* затемнение */
+.overlay {
+    background: rgba(10, 15, 30, 0.9);
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* контейнер */
+.container {
+    max-width: 850px;
+    margin: auto;
     text-align: center;
 }
 
-.overlay {
-    background: rgba(0,0,0,0.75);
-    min-height: 100vh;
-    padding: 40px;
-}
-
+/* заголовок */
 h1 {
-    font-size: 60px;
+    font-size: 42px;
     color: #00ffc3;
     text-shadow: 0 0 20px #00ffc3;
 }
 
+.subtitle {
+    color: #cbd5f5;
+}
+
+/* кнопки */
 .btn {
     display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    border: 2px solid #00ffc3;
-    border-radius: 10px;
+    margin: 8px;
+    padding: 10px 18px;
+    border: 1px solid #00ffc3;
+    border-radius: 8px;
     color: #00ffc3;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .btn:hover {
@@ -41,80 +53,141 @@ h1 {
     color: black;
 }
 
-img {
-    width: 150px;
+/* фото */
+.avatar {
+    width: 140px;
     border-radius: 50%;
     margin: 20px 0;
     box-shadow: 0 0 20px #00ffc3;
 }
 
+/* секции */
 .section {
     margin-top: 40px;
+    text-align: left;
 }
 
-h2 {
+.section h2 {
+    text-align: center;
     color: #ff00ff;
 }
 
+/* карточки */
 .card {
     background: rgba(0,0,0,0.6);
-    border: 2px solid #ff00ff;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ссылки */
+a {
+    color: #00ffc3;
 }
 </style>
-
 </head>
 
 <body>
 <div class="overlay">
+<div class="container">
 
 <h1>Илья</h1>
 
-<img src="me.jpg" alt="Фото">
+<img src="me.jpg" class="avatar">
 
-<p>Студент РУДН | Python | Анализ данных</p>
+<p class="subtitle">Python Developer | Data Analysis | RUDN</p>
 
-<!-- КНОПКИ -->
 <div>
     <a class="btn" href="https://github.com/iluhamusic">GitHub</a>
     <a class="btn" href="mailto:2006.11.09kimilya@gmail.com">Email</a>
     <a class="btn" href="index_en.html">EN</a>
 </div>
 
+<!-- ОБО МНЕ -->
 <div class="section">
 <h2>Обо мне</h2>
-<p>Студент направления «Компьютерные и информационные науки». Интересуюсь программированием, анализом данных и EDM музыкой.</p>
+<p>
+Студент направления «Компьютерные и информационные науки».
+Работаю с Python, SQL и Linux. Интересуюсь backend-разработкой и анализом данных.
+</p>
 </div>
 
+<!-- ОБРАЗОВАНИЕ -->
+<div class="section">
+<h2>Образование</h2>
+<p>РУДН, Компьютерные и информационные науки (2025 — настоящее время)</p>
+</div>
+
+<!-- НАВЫКИ -->
 <div class="section">
 <h2>Навыки</h2>
-<p>Python | SQL | Linux | Git | Data Analysis</p>
+<p>Python • SQL • Linux • Git • Data Analysis</p>
 </div>
 
+<!-- ПРОЕКТЫ -->
 <div class="section">
 <h2>Проекты</h2>
 
 <div class="card">
-<a href="https://github.com/iluhamusic/iluhamusic">iluhamusic</a>
-<p>Лабораторные работы: Linux, архитектура ЭВМ</p>
+<b><a href="https://github.com/iluhamusic/iluhamusic">iluhamusic</a></b>
+<p>Практика Linux: терминал, файловая система, базовые команды.</p>
 </div>
 
 <div class="card">
-<a href="https://github.com/iluhamusic/my_projects_and_programms">my_projects_and_programms</a>
-<p>Мои программы и учебные проекты</p>
+<b><a href="https://github.com/iluhamusic/my_projects_and_programms">my_projects_and_programms</a></b>
+<p>Python-проекты: базовые алгоритмы и обработка данных.</p>
 </div>
 
 </div>
 
+<!-- ДОСТИЖЕНИЯ -->
+<div class="section">
+<h2>Достижения</h2>
+<p>Поступил в РУДН на бюджет</p>
+<p>Создал проекты на Python и разместил их на GitHub</p>
+</div>
+
+<!-- ПОСТЫ -->
+<div class="section">
+<h2>Посты</h2>
+
+<div class="card">
+<b>Моя неделя</b>
+<p>Изучал Git, Linux и развернул сайт на GitHub Pages.</p>
+</div>
+
+<div class="card">
+<b>Git</b>
+<p>Система контроля версий для отслеживания изменений в коде.</p>
+</div>
+
+<div class="card">
+<b>CI/CD</b>
+<p>Автоматизация процессов разработки и деплоя.</p>
+</div>
+
+</div>
+
+<!-- НАУЧНЫЕ РЕСУРСЫ -->
+<div class="section">
+<h2>Научные ресурсы</h2>
+<p>
+<a href="https://scholar.google.com/">Google Scholar</a> |
+<a href="https://orcid.org/">ORCID</a> |
+<a href="https://arxiv.org/">arXiv</a> |
+<a href="https://github.com/iluhamusic">GitHub</a>
+</p>
+</div>
+
+<!-- КОНТАКТЫ -->
 <div class="section">
 <h2>Контакты</h2>
 <p>Email: 2006.11.09kimilya@gmail.com</p>
 <p>Телефон: +7 (928) 451-94-05</p>
 </div>
 
+</div>
 </div>
 </body>
 </html>
