@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Ilya | Portfolio</title>
+<title>Ilya | Python Developer</title>
 
 <style>
 body {
@@ -10,30 +10,38 @@ body {
     font-family: Arial, sans-serif;
     background: url("background.jpg") no-repeat center/cover;
     color: white;
-    text-align: center;
 }
 
 .overlay {
-    background: rgba(0,0,0,0.75);
+    background: rgba(10, 15, 30, 0.9);
     min-height: 100vh;
-    padding: 40px;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 42px;
     color: #00ffc3;
     text-shadow: 0 0 20px #00ffc3;
 }
 
+.subtitle {
+    color: #cbd5f5;
+}
+
 .btn {
     display: inline-block;
-    margin: 10px;
-    padding: 12px 25px;
-    border: 2px solid #00ffc3;
-    border-radius: 10px;
+    margin: 8px;
+    padding: 10px 18px;
+    border: 1px solid #00ffc3;
+    border-radius: 8px;
     color: #00ffc3;
     text-decoration: none;
-    transition: 0.3s;
 }
 
 .btn:hover {
@@ -41,8 +49,8 @@ h1 {
     color: black;
 }
 
-img {
-    width: 150px;
+.avatar {
+    width: 140px;
     border-radius: 50%;
     margin: 20px 0;
     box-shadow: 0 0 20px #00ffc3;
@@ -50,32 +58,37 @@ img {
 
 .section {
     margin-top: 40px;
+    text-align: left;
 }
 
-h2 {
+.section h2 {
+    text-align: center;
     color: #ff00ff;
 }
 
 .card {
     background: rgba(0,0,0,0.6);
-    border: 2px solid #ff00ff;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+a {
+    color: #00ffc3;
 }
 </style>
-
 </head>
 
 <body>
 <div class="overlay">
+<div class="container">
 
 <h1>Ilya</h1>
 
-<img src="me.jpg" alt="Photo">
+<img src="me.jpg" class="avatar">
 
-<p>RUDN Student | Python | Data Analysis</p>
+<p class="subtitle">Python Developer | Data Analysis | RUDN</p>
 
 <div>
     <a class="btn" href="https://github.com/iluhamusic">GitHub</a>
@@ -83,37 +96,91 @@ h2 {
     <a class="btn" href="index.html">RU</a>
 </div>
 
+<!-- ABOUT -->
 <div class="section">
 <h2>About Me</h2>
-<p>Student of Computer and Information Sciences. Interested in programming, data analysis and EDM music.</p>
+<p>
+Student of Computer and Information Sciences.
+Working with Python, SQL and Linux. Interested in backend development
+and data analysis.
+</p>
 </div>
 
+<!-- EDUCATION -->
+<div class="section">
+<h2>Education</h2>
+<p>RUDN University, Computer and Information Sciences (2025 — present)</p>
+</div>
+
+<!-- SKILLS -->
 <div class="section">
 <h2>Skills</h2>
-<p>Python | SQL | Linux | Git | Data Analysis</p>
+<p>Python • SQL • Linux • Git • Data Analysis</p>
 </div>
 
+<!-- PROJECTS -->
 <div class="section">
 <h2>Projects</h2>
 
 <div class="card">
-<a href="https://github.com/iluhamusic/iluhamusic">iluhamusic</a>
-<p>Lab works: Linux, computer architecture</p>
+<b><a href="https://github.com/iluhamusic/iluhamusic">iluhamusic</a></b>
+<p>Linux practice: terminal, file system, basic commands.</p>
 </div>
 
 <div class="card">
-<a href="https://github.com/iluhamusic/my_projects_and_programms">my_projects_and_programms</a>
-<p>My programs and study projects</p>
+<b><a href="https://github.com/iluhamusic/my_projects_and_programms">my_projects_and_programms</a></b>
+<p>Python projects: basic algorithms and data processing.</p>
 </div>
 
 </div>
 
+<!-- ACHIEVEMENTS -->
+<div class="section">
+<h2>Achievements</h2>
+<p>Entered RUDN on a budget place</p>
+<p>Created Python projects and published them on GitHub</p>
+</div>
+
+<!-- POSTS -->
+<div class="section">
+<h2>Posts</h2>
+
+<div class="card">
+<b>My Week</b>
+<p>Studied Git, Linux and deployed a website on GitHub Pages.</p>
+</div>
+
+<div class="card">
+<b>Git</b>
+<p>Version control system for tracking changes in code.</p>
+</div>
+
+<div class="card">
+<b>CI/CD</b>
+<p>Automation of development and deployment processes.</p>
+</div>
+
+</div>
+
+<!-- RESOURCES -->
+<div class="section">
+<h2>Scientific Resources</h2>
+<p>
+<a href="https://scholar.google.com/">Google Scholar</a> |
+<a href="https://orcid.org/">ORCID</a> |
+<a href="https://arxiv.org/">arXiv</a> |
+<a href="https://github.com/iluhamusic">GitHub</a>
+</p>
+</div>
+
+<!-- CONTACTS -->
 <div class="section">
 <h2>Contacts</h2>
 <p>Email: 2006.11.09kimilya@gmail.com</p>
 <p>Phone: +7 (928) 451-94-05</p>
 </div>
 
+</div>
 </div>
 </body>
 </html>
