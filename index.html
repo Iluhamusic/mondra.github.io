@@ -6,146 +6,115 @@
 
 <style>
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: url("background.jpg") no-repeat center center/cover;
-  color: white;
-  text-align: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("background.jpg") no-repeat center/cover;
+    color: white;
+    text-align: center;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(5,10,20,0.85);
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.container {
-  padding: 80px 20px;
-  max-width: 900px;
-  margin: auto;
+.overlay {
+    background: rgba(0,0,0,0.75);
+    min-height: 100vh;
+    padding: 40px;
 }
 
 h1 {
-  font-size: 60px;
-  color: #00ffc3;
-  text-shadow: 0 0 20px #00ffc3;
-}
-
-h2 {
-  margin-top: 50px;
-  color: #ff00ff;
+    font-size: 60px;
+    color: #00ffc3;
+    text-shadow: 0 0 20px #00ffc3;
 }
 
 .btn {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 25px;
-  border: 1px solid #00ffc3;
-  border-radius: 10px;
-  color: #00ffc3;
-  text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    border: 2px solid #00ffc3;
+    border-radius: 10px;
+    color: #00ffc3;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
-.skills span {
-  display: inline-block;
-  margin: 8px;
-  padding: 8px 15px;
-  border: 1px solid #00ffc3;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00ffc3;
+.btn:hover {
+    background: #00ffc3;
+    color: black;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    box-shadow: 0 0 20px #00ffc3;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+h2 {
+    color: #ff00ff;
 }
 
 .card {
-  max-width: 700px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 15px;
-  background: rgba(10,15,30,0.8);
-  border: 1px solid #ff00ff;
-}
-
-a {
-  color: #00ffc3;
-  text-decoration: none;
+    background: rgba(0,0,0,0.6);
+    border: 2px solid #ff00ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
 }
 </style>
+
 </head>
 
 <body>
-
-<div class="container">
+<div class="overlay">
 
 <h1>Илья</h1>
 
-<img src="me.jpg" alt="Фото" style="
-  width:150px;
-  border-radius:50%;
-  margin-top:20px;
-  box-shadow: 0 0 20px #00ffc3;
-">
+<img src="me.jpg" alt="Фото">
 
 <p>Студент РУДН | Python | Анализ данных</p>
 
-<a class="btn" href="https://github.com/iluhamusic">GitHub</a>
-<a class="btn" href="mailto:2006.11.09kimilya@gmail.com">Email</a>
-<a class="btn" href="index_en.html">EN</a>
-
-<h2>Обо мне</h2>
-<p>Студент направления «Компьютерные и информационные науки». Интересуюсь программированием, анализом данных и EDM музыкой.</p>
-
-<h2>Интересы</h2>
-<p>Музыка, технологии, разработка, Linux</p>
-
-<h2>Образование</h2>
-<p>РУДН, 2025 — настоящее время</p>
-
-<h2>Навыки</h2>
-<div class="skills">
-  <span>Python</span>
-  <span>SQL</span>
-  <span>Linux</span>
-  <span>Git</span>
-  <span>Data Analysis</span>
+<!-- КНОПКИ -->
+<div>
+    <a class="btn" href="https://github.com/iluhamusic">GitHub</a>
+    <a class="btn" href="mailto:2006.11.09kimilya@gmail.com">Email</a>
+    <a class="btn" href="index_en.html">EN</a>
 </div>
 
+<div class="section">
+<h2>Обо мне</h2>
+<p>Студент направления «Компьютерные и информационные науки». Интересуюсь программированием, анализом данных и EDM музыкой.</p>
+</div>
+
+<div class="section">
+<h2>Навыки</h2>
+<p>Python | SQL | Linux | Git | Data Analysis</p>
+</div>
+
+<div class="section">
 <h2>Проекты</h2>
 
 <div class="card">
-  <a href="https://github.com/iluhamusic/iluhamusic">iluhamusic</a>
-  <p>Лабораторные работы: Linux, архитектура ЭВМ</p>
+<a href="https://github.com/iluhamusic/iluhamusic">iluhamusic</a>
+<p>Лабораторные работы: Linux, архитектура ЭВМ</p>
 </div>
 
 <div class="card">
-  <a href="https://github.com/iluhamusic/my_projects_and_programms">my_projects_and_programms</a>
-  <p>Мои программы и учебные проекты</p>
+<a href="https://github.com/iluhamusic/my_projects_and_programms">my_projects_and_programms</a>
+<p>Мои программы и учебные проекты</p>
 </div>
 
-<h2>Достижения</h2>
-<p>Создал треки в FL Studio и публиковал их</p>
-<p>Поступил в РУДН на бюджет</p>
+</div>
 
-<h2>Посты</h2>
-<p><b>Моя неделя:</b> изучал Git, Linux и создавал сайт.</p>
-<p><b>Git:</b> система контроля версий.</p>
-<p><b>CI/CD:</b> автоматизация разработки.</p>
-
-<h2>Научные ресурсы</h2>
-<p>
-<a href="https://scholar.google.com/">Google Scholar</a> |
-<a href="https://orcid.org/">ORCID</a> |
-<a href="https://arxiv.org/">arXiv</a>
-</p>
-
+<div class="section">
 <h2>Контакты</h2>
 <p>Email: 2006.11.09kimilya@gmail.com</p>
 <p>Телефон: +7 (928) 451-94-05</p>
-
 </div>
 
+</div>
 </body>
 </html>
