@@ -13,13 +13,12 @@ body {
   text-align: center;
 }
 
-/* затемнение */
 body::before {
   content: "";
   position: fixed;
   width: 100%;
   height: 100%;
-  background: rgba(5, 10, 20, 0.75);
+  background: rgba(5,10,20,0.85);
   top: 0;
   left: 0;
   z-index: -1;
@@ -27,22 +26,21 @@ body::before {
 
 .container {
   padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* НЕОН */
 h1 {
   font-size: 60px;
   color: #00ffc3;
-  text-shadow: 0 0 15px #00ffc3;
+  text-shadow: 0 0 20px #00ffc3;
 }
 
 h2 {
   margin-top: 50px;
   color: #ff00ff;
-  text-shadow: 0 0 10px #ff00ff;
 }
 
-/* кнопки */
 .btn {
   display: inline-block;
   margin: 10px;
@@ -51,16 +49,8 @@ h2 {
   border-radius: 10px;
   color: #00ffc3;
   text-decoration: none;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: #00ffc3;
-  color: black;
-  box-shadow: 0 0 15px #00ffc3;
-}
-
-/* навыки */
 .skills span {
   display: inline-block;
   margin: 8px;
@@ -70,20 +60,13 @@ h2 {
   box-shadow: 0 0 10px #00ffc3;
 }
 
-/* карточки */
 .card {
   max-width: 700px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
-  background: rgba(10, 15, 30, 0.8);
+  background: rgba(10,15,30,0.8);
   border: 1px solid #ff00ff;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 20px #ff00ff;
 }
 
 a {
@@ -98,12 +81,20 @@ a {
 <div class="container">
 
 <h1>Илья</h1>
+
+<img src="me.jpg" alt="Фото" style="
+  width:150px;
+  border-radius:50%;
+  margin-top:20px;
+  box-shadow: 0 0 20px #00ffc3;
+">
+
 <p>Студент РУДН | Python | Анализ данных</p>
 
 <a class="btn" href="https://github.com/iluhamusic">GitHub</a>
 <a class="btn" href="mailto:2006.11.09kimilya@gmail.com">Email</a>
+<a class="btn" href="index_en.html">EN</a>
 
-<!-- ОБО МНЕ -->
 <h2>Обо мне</h2>
 <p>Студент направления «Компьютерные и информационные науки». Интересуюсь программированием, анализом данных и EDM музыкой.</p>
 
@@ -113,7 +104,6 @@ a {
 <h2>Образование</h2>
 <p>РУДН, 2025 — настоящее время</p>
 
-<!-- НАВЫКИ -->
 <h2>Навыки</h2>
 <div class="skills">
   <span>Python</span>
@@ -123,7 +113,6 @@ a {
   <span>Data Analysis</span>
 </div>
 
-<!-- ПРОЕКТЫ -->
 <h2>Проекты</h2>
 
 <div class="card">
@@ -136,18 +125,15 @@ a {
   <p>Мои программы и учебные проекты</p>
 </div>
 
-<!-- ДОСТИЖЕНИЯ -->
 <h2>Достижения</h2>
-<p>Создал с помощью FL studio уже 2 трека и выложил в youtube и в soundcloud</p>
-<p>Поступление в РУДН на бюджет</p>
+<p>Создал треки в FL Studio и публиковал их</p>
+<p>Поступил в РУДН на бюджет</p>
 
-<!-- ПОСТЫ -->
 <h2>Посты</h2>
 <p><b>Моя неделя:</b> изучал Git, Linux и создавал сайт.</p>
-<p><b>Git:</b> система контроля версий для отслеживания изменений.</p>
-<p><b>CI/CD:</b> автоматизация разработки и деплоя.</p>
+<p><b>Git:</b> система контроля версий.</p>
+<p><b>CI/CD:</b> автоматизация разработки.</p>
 
-<!-- РЕСУРСЫ -->
 <h2>Научные ресурсы</h2>
 <p>
 <a href="https://scholar.google.com/">Google Scholar</a> |
@@ -155,7 +141,6 @@ a {
 <a href="https://arxiv.org/">arXiv</a>
 </p>
 
-<!-- КОНТАКТЫ -->
 <h2>Контакты</h2>
 <p>Email: 2006.11.09kimilya@gmail.com</p>
 <p>Телефон: +7 (928) 451-94-05</p>
