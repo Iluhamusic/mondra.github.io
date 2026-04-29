@@ -3,156 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Илья | Junior Data / Python</title>
+  <title>Илья | Cyberpunk Portfolio</title>
 
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: url('background.jpg') no-repeat center center/cover;
       color: white;
     }
 
+    /* затемнение фона */
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+    }
+
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
       text-align: center;
     }
 
     h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
+      font-size: 60px;
+      color: #00ffcc;
+      text-shadow: 0 0 20px #00ffcc;
     }
 
     p {
       font-size: 18px;
-      color: #cbd5f5;
+      color: #ccc;
     }
 
     h2 {
-      margin-top: 50px;
+      margin-top: 60px;
+      color: #ff00ff;
+      text-shadow: 0 0 10px #ff00ff;
     }
 
-    /* Кнопки */
-    .buttons {
-      margin-top: 20px;
-    }
-
+    /* кнопки */
     .btn {
       display: inline-block;
       margin: 10px;
       padding: 12px 20px;
+      border: 2px solid #00ffcc;
       border-radius: 10px;
-      background: #38bdf8;
-      color: black;
+      color: #00ffcc;
       text-decoration: none;
-      font-weight: bold;
       transition: 0.3s;
     }
 
     .btn:hover {
-      background: #0ea5e9;
-      transform: scale(1.05);
+      background: #00ffcc;
+      color: black;
+      box-shadow: 0 0 15px #00ffcc;
     }
 
-    /* Навыки */
-    .skills {
-      margin-top: 20px;
-    }
-
+    /* навыки */
     .skill {
       display: inline-block;
-      margin: 5px;
+      margin: 6px;
       padding: 8px 14px;
-      background: #1e293b;
+      border: 1px solid #00ffcc;
       border-radius: 10px;
+      color: #00ffcc;
+      box-shadow: 0 0 10px rgba(0,255,204,0.5);
     }
 
-    /* Проекты */
-    .projects {
-      margin-top: 40px;
-    }
-
+    /* карточки */
     .card {
       display: block;
-      background: #1e293b;
-      padding: 20px;
       margin: 20px 0;
+      padding: 20px;
       border-radius: 15px;
       text-decoration: none;
       color: white;
+      border: 1px solid #ff00ff;
       transition: 0.3s;
+      background: rgba(0,0,0,0.5);
     }
 
     .card:hover {
       transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(56, 189, 248, 0.5);
+      box-shadow: 0 0 25px #ff00ff;
     }
 
     .card-title {
-      font-size: 20px;
-      margin-bottom: 5px;
+      font-size: 22px;
+      color: #00ffcc;
     }
 
     .card-desc {
-      color: #94a3b8;
-      font-size: 16px;
-    }
-
-    /* Контакты */
-    .contacts {
-      margin-top: 30px;
+      color: #aaa;
     }
 
   </style>
 </head>
 
 <body>
+  <div class="overlay">
+    <div class="container">
 
-  <div class="container">
+      <h1>Илья</h1>
+      <p>Студент РУДН | Python | Анализ данных</p>
 
-    <!-- Главный блок -->
-    <h1>Илья</h1>
-    <p>Студент РУДН | Python | Анализ данных</p>
-
-    <div class="buttons">
       <a href="https://github.com/iluhamusic" class="btn">GitHub</a>
       <a href="mailto:2006.11.09kimilya@gmail.com" class="btn">Email</a>
-    </div>
 
-    <!-- Навыки -->
-    <h2>Навыки</h2>
-    <div class="skills">
-      <span class="skill">Python</span>
-      <span class="skill">SQL</span>
-      <span class="skill">Linux</span>
-      <span class="skill">Git</span>
-      <span class="skill">Анализ данных</span>
-    </div>
+      <h2>Навыки</h2>
+      <div>
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Linux</span>
+        <span class="skill">Git</span>
+        <span class="skill">Data Analysis</span>
+      </div>
 
-    <!-- Проекты -->
-    <div class="projects">
       <h2>Проекты</h2>
 
       <a href="https://github.com/iluhamusic/iluhamusic" class="card">
         <div class="card-title">iluhamusic</div>
         <div class="card-desc">
-          Лабораторные работы: Linux, архитектура ЭВМ, работа в терминале
+          Linux, терминал, архитектура ЭВМ
         </div>
       </a>
 
-      <!-- можешь добавить второй проект позже -->
-    </div>
-
-    <!-- Контакты -->
-    <div class="contacts">
       <h2>Контакты</h2>
       <p>Email: 2006.11.09kimilya@gmail.com</p>
       <p>Телефон: +7 (928) 451-94-05</p>
+
     </div>
-
   </div>
-
 </body>
 </html>
